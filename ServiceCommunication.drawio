@@ -1,0 +1,68 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.0">
+  <diagram name="Page-1" id="iuLG2r1Xzks6OYOkKNal">
+    <mxGraphModel dx="1823" dy="1161" grid="1" gridSize="7" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="35BVN5sbL3Mu-NNxJEIt-10" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=default;labelBackgroundColor=none;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-83" y="-14" as="sourcePoint" />
+            <mxPoint x="238" y="-14" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="35BVN5sbL3Mu-NNxJEIt-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Service A" vertex="1">
+          <mxGeometry height="60" width="120" x="-203" y="-35" as="geometry" />
+        </mxCell>
+        <mxCell id="35BVN5sbL3Mu-NNxJEIt-11" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=default;labelBackgroundColor=none;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="238" y="7" as="sourcePoint" />
+            <mxPoint x="-83" y="7" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="35BVN5sbL3Mu-NNxJEIt-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Service B" vertex="1">
+          <mxGeometry height="60" width="120" x="238" y="-35" as="geometry" />
+        </mxCell>
+        <mxCell id="35BVN5sbL3Mu-NNxJEIt-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="Request" vertex="1">
+          <mxGeometry height="30" width="60" x="42" y="-42" as="geometry" />
+        </mxCell>
+        <mxCell id="35BVN5sbL3Mu-NNxJEIt-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="Response" vertex="1">
+          <mxGeometry height="30" width="60" x="42" y="7" as="geometry" />
+        </mxCell>
+        <mxCell id="35BVN5sbL3Mu-NNxJEIt-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="Synchronous Communication&lt;div&gt;Service A sends the SMS to Service B and waits for Immediate Response&lt;/div&gt;&lt;div&gt;If Service B is down then you will get the error immediately&lt;/div&gt;" vertex="1">
+          <mxGeometry height="49" width="560" x="-201" y="-154" as="geometry" />
+        </mxCell>
+        <mxCell id="35BVN5sbL3Mu-NNxJEIt-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Service A" vertex="1">
+          <mxGeometry height="60" width="120" x="371" y="401" as="geometry" />
+        </mxCell>
+        <mxCell id="35BVN5sbL3Mu-NNxJEIt-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Service B" vertex="1">
+          <mxGeometry height="60" width="120" x="875" y="401" as="geometry" />
+        </mxCell>
+        <mxCell id="35BVN5sbL3Mu-NNxJEIt-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=none;" value="Asynchronous Communication&lt;div&gt;Service A sends the SMS to Service B and will not wait for Immediate Response&lt;/div&gt;&lt;div&gt;If Service B is down then Mesage Broker will store the SMS and&lt;/div&gt;&lt;div&gt;When that service is up then message is processed further&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="560" x="396" y="189" as="geometry" />
+        </mxCell>
+        <mxCell id="35BVN5sbL3Mu-NNxJEIt-23" edge="1" parent="1" source="35BVN5sbL3Mu-NNxJEIt-16" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="35BVN5sbL3Mu-NNxJEIt-24" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="491" y="416" as="sourcePoint" />
+            <mxPoint x="665" y="366" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="35BVN5sbL3Mu-NNxJEIt-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Message Broker" vertex="1">
+          <mxGeometry height="60" width="120" x="616" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="35BVN5sbL3Mu-NNxJEIt-28" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;elbow=vertical;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="798" y="366" />
+              <mxPoint x="798" y="431" />
+            </Array>
+            <mxPoint x="735" y="366" as="sourcePoint" />
+            <mxPoint x="875" y="431" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="35BVN5sbL3Mu-NNxJEIt-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Mesage Brokers:&lt;div&gt;1. Apache Kafka&lt;/div&gt;&lt;div&gt;2. RabbitMQ&lt;/div&gt;&lt;div&gt;3. AWS SQS&lt;/div&gt;&lt;div&gt;4. Google Pub/Sub&lt;/div&gt;&lt;div&gt;5. ActiveMQ&lt;/div&gt;" vertex="1">
+          <mxGeometry height="91" width="259" x="546.5" y="504" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
